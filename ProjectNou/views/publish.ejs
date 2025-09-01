@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <% if ((titleToPost && titleToPost.trim()) && (essayToPost && essayToPost.trim())) {%>
+        <h1>Congrats for your first essay!!!!</h1>
+        <% 
+          const titleFirstUpper = titleToPost.charAt(0).toUpperCase() + titleToPost.slice(1).toLowerCase();
+        %>
+        <h2><%= titleFirstUpper %></h2>
+        <h3 class="essay-to-post"><%= essayToPost %></h3>
+
+    <%} else{%>
+        <h1 class="highlight-quote">"Let your creativity flow, and your ideas will light the world."</h1>
+        <form action="/submit" method="POST" class="essay-form">
+            <input type="text" name="title" placeholder="Title" class="input-field">
+            <input type="text" name="essay" placeholder="Essay" class="essay-field input-field">
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    <%}%>
+</body>
+<%- include("partials/footer.ejs") %>
