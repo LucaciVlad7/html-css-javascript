@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <% if(locals.content){ %>
+            <% let data; try { data = JSON.parse(content); } catch(e) { data = null; } %>
+
+            <% if(data && data.error){ %>
+                <div class="error">
+                     Error: <%= data.error %> 
+                </div>
+            <% } else if (data) { %>
+                <div class="weather-card">
+                    <h2>Weather for <%= data.city %></h2>
+                    <p><strong>Latitude:</strong> <%= data.coordinates.lat %>, <strong>Longitude:</strong> <%= data.coordinates.lon %></p>
+                    <p><strong>Temperature:</strong> <%= data.tomorrow.temp.day %> °C</p>
+                    <p><strong>Condition:</strong> <%= data.tomorrow.weather[0].description %></p>
+                    <p><strong>Will it rain?</strong> <%= data.tomorrow.willRain ? "Yes" : "No" %></p>
+                    <a href="/">Check Another City</a>
+                </div>
+            <% } %>
+        <% } else { %>
+            <div class="form-card">
+                <h1>Enter the city you are interested in</h1>
+                <form action="/submit" method="POST">
+                    <input type="text" name="city" placeholder="Enter city name" required>
+                    <button type="submit">Get Weather</button>
+                </form>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
