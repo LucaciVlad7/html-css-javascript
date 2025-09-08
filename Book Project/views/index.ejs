@@ -1,0 +1,99 @@
+<%- include('partials/header.ejs'); -%>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <title>Book Project</title>
+    </head>
+
+    <body>
+        <div class="centered-container">
+            <div class="image-container">
+                <img src="/images/library_with_people.avif" alt="Library" class="library-img">
+                <div class="overlay-text">
+                    <h1>Welcome to our book library</h1>
+                    <p>Find your favorite books!</p>
+                </div>
+            </div>
+
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom">Hanging icons</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                                <use xlink:href="#book"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p> <a href="#"
+                                class="btn btn-primary button">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                                <use xlink:href="#bookmark-check"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p> <a href="#"
+                                class="btn btn-primary button">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div
+                            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                                <use xlink:href="#tools"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p> <a href="#"
+                                class="btn btn-primary button">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                     <svg class="bi mt-5 mb-3" width="48" height="48"
+                        aria-hidden="true">
+                        <use xlink:href="#check2-circle"></use>
+                    </svg>
+                    <h1 class="text-body-emphasis">Placeholder jumbotron</h1>
+                    <p class="col-lg-6 mx-auto mb-4">
+                        This faded back jumbotron is useful for placeholder content. It's also a great way to add a bit
+                        of context to a page or section when no content is available and to encourage visitors to take a
+                        specific action.
+                    </p> <button class="btn btn-primary px-5 mb-5 button" type="button">
+                        Call to action
+                    </button>
+                </div>
+            </div>
+                
+        </div>
+    </body>
+
+    </html>
+
+    <%- include('partials/footer.ejs'); -%>

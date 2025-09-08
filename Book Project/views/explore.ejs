@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <%- include('partials/header.ejs'); -%>
+            <div class="content">
+                <div class="explore">
+                    <h1>Books we recommend</h1>
+                    <% if(books.length===0){ %>
+                        <p>No books found</p>
+                        <% } else { %>
+                            <ul>
+                                <% books.forEach(book=> { %>
+                                    <li>
+                                        <div class="explore-books">
+                                            <img src="https://covers.openlibrary.org/b/ISBN/<%= book.isbn %>-M.jpg?default=false"
+                                                alt="Cover for <%= book.title %>">
+                                            <div class="explore-book-content">
+                                                <h2>
+                                                    <%= book.title %> - by <%= book.author %>
+                                                </h2>
+                                                <p><strong>Date Read:</strong>
+                                                    <%= book.release_date.toISOString().split('T')[0] %>.
+                                                        <strong>Rating:</strong>
+                                                        <%= book.rating %>/10
+                                                </p>
+                                                <p>
+                                                    <%= book.description %>
+                                                </p>
+                                                <p>
+                                                    <%= book.notes %>
+                                                </p>
+                                                <a href="#">Amazon page</a>
+                                                <form action="/delete" method="POST">
+                                                    <input type="hidden" name="id" value="<%= book.id %>">
+                                                    <button type="submit" class="delete-button">
+                                                        Delete
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                            <% } %>
+                </div>
+            </div>
+            <%- include('partials/footer.ejs'); -%>
+    </div>
+</body>
+
+</html>

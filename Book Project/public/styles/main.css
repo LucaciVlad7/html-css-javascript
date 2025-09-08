@@ -1,0 +1,435 @@
+body{
+    background-color: #F5F5DC;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.centered-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color:#6B4226;
+}
+
+.home-page{
+    background-color: #333333 !important;
+}
+
+.brand-link *{
+    color:#6B4226 !important;
+}
+
+.custom-header {
+    border-bottom: 1px solid #333333 !important;
+}
+
+.custom-footer{
+    border-top: 1px solid #333333 !important;
+}
+
+.text-body-secondary,.footer-book{
+    color: #6B4226 !important;
+}
+
+.library-img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    display: block;
+    border: 3px solid #6B4226;
+    border-radius: 8px; 
+}
+
+.image-container {
+    position: relative; 
+    display: inline-block; 
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.overlay-text {
+    position: absolute; 
+    top: 50%;            
+    left: 10%;           
+    transform: translateY(-50%); 
+    color: #6B4226;      
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 1rem;       
+    border-radius: 0.5rem; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.overlay-text p{
+    color:#333333;
+}
+
+.divider{
+    border:none;
+    height:1px;
+    background-color: #333333;
+    margin: 2rem,0;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+.button{
+    background-color: #6B4226;
+    border: 2px solid #C19A6B;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.content {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* about css */
+
+#about-secondary{
+    color: #6B4226;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; 
+}
+
+#about-h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem; 
+    margin-bottom: 1rem;
+}
+
+.h3-about{
+    color: #6B4226;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; 
+    font-size: 1.3rem;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4rem;     
+    margin-top: 1.25rem;
+}
+
+.image-row img {
+    object-fit: cover;
+    border-radius: 0.75rem;  
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.25);
+}
+
+
+.side-img {
+    width: 12.5rem;   
+    height: 15.625rem; 
+    margin-bottom: 2.5rem;
+}
+
+.center-img {
+    width: 16.5rem;    
+    height: 19.625rem; 
+}
+
+.about-p{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-top:2rem;
+    font-family: 'Inter', sans-serif;
+    color: #6B4226;
+    box-sizing: border-box;
+}
+
+.centered-container-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* contact css */
+
+.centered-contact {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: 100%;              
+}
+
+.contact-card {
+    background-color: #F5F5DC; 
+    border: 2px solid #6B4226; 
+    border-radius: 12px;
+    padding: 4rem;
+    width: 800px;
+    margin: 2rem auto; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-card h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.contact-card a {
+    color: #6B4226;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 600;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* add css */
+
+.form-card{
+    background-color: #F5F5DC; 
+    border: 2px solid #6B4226; 
+    border-radius: 12px;
+    padding: 4rem;
+    width: 800px;
+    margin: 2rem auto; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.form-card h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form-card input,
+.form-card textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+}
+
+.form-card button,
+.form-card a {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6B4226;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.form-card button:hover {
+    background-color: #543218;
+}
+
+/* explore css */
+
+.explore-book {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #1a1a1a; /* dark background like your screenshot */
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.explore-book img {
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.explore-book-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-book-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    text-decoration: underline; 
+}
+
+.explore-book-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.25rem 0;
+}
+
+.explore-book-content p strong {
+    color: #6B4226;
+}
+
+.explore-book-content a {
+    color: #6B4226;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+}
+
+.explore-book-content a:hover {
+    color: #ffffff;
+}
+
+/* eplore css */
+
+.explore h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.explore ul {
+    list-style: none;
+    padding: 0;
+}
+
+.explore li {
+    margin-bottom: 2rem;
+}
+
+.explore-books {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  max-width: 1000px; 
+  margin: 0 auto;   
+}
+
+.explore-books:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.explore-book-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore-book-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.explore-book-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.explore-book-content a {
+    color: #543218;
+    text-decoration: underline;
+    margin-right: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.explore-book-content a:hover {
+    color: #e08000;
+}
+
+.delete-button {
+    margin-top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+/*
+#333333 -> grey
+#C19A6B -> tan
+*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        <%- include('partials/header.ejs'); -%>
+        <div class="content">
+            <div class="centered-container-about">
+                <h2 id="about-secondary">About us</h2>
+                <h1 id="about-h1">Learn more about us</h1>
+                <h3 class="h3-about">Everything you need to know on this page</h3>
+                <div class="image-row">
+                    <img src="/images/left_image.jpg" alt="Left image" class="side-img">
+                    <img src="/images/center_image.jpg" alt="Center image" class="center-img">
+                    <img src="/images/right_image.jpg" alt="Right image" class="side-img">
+                </div>
+                <div class="about-p">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs'); -%>
+        </div>
+    </body>
+
+    </html>

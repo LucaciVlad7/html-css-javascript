@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        <%- include('partials/header.ejs'); -%>
+        <div class="content">
+            <div class="form-card">
+                <h1>Add a book</h1>
+                <form action="/add" method="post">
+                    <input type="text" name="title" placeholder="Book title" required>
+                    <input type="text" name="author" placeholder="Book author" required>
+                    <input type="date" name="release_date" placeholder="Release date" required>
+                    <input type="number" name="rating" placeholder="Rating(1-10)" min="1" max="10" required>
+                    <input type="text" name="description" placeholder="Book description" required>
+                    <input type="text" name="notes" placeholder="Notes you took while reading that you want to share" required>
+                    <input type="text" name="isbn" placeholder="ISBN (you can find it online)" required>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs'); -%>
+        </div>
+    </body>
+
+    </html>

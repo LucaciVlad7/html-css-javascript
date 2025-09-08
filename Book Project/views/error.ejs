@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <%- include('partials/header.ejs'); -%>
+            <div class="content">
+                <div class="form-card">
+                    <h1>Something went wrong</h1>
+                    <p>
+                        <%= message %>
+                    </p>
+                    <a href="/add">Try again</a>
+                </div>
+            </div>
+            <%- include('partials/footer.ejs'); -%>
+    </div>
+</body>
+
+</html>
